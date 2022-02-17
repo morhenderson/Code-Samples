@@ -1,8 +1,10 @@
 /*/ 
-    main.cpp
-    Morgan Henderson, August 17, 2021
-    A program for a simple, fully connected neural network model
+    Myc-Drop.cpp
+    Morgan Henderson, Spring 2022
+    A simple, fully connected neural network for determining the edibility of mushroom samples
 /*/
+
+using namespace std;
 
 // Define a structure for the edges within a network
 struct edge {
