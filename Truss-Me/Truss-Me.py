@@ -182,12 +182,12 @@ def plotDisp(truss,mag=10,maxDim=zeros(3),cPane=(.7,.7,.7,1.0),cEdges=(0,0,0,1.0
 		fig.suptitle("Nodal Displacements",fontsize=24)
 		ax3d.grid(False)
 		ax3d.scatter(truss.rNodes[:,0],truss.rNodes[:,1],truss.rNodes[:,2],color=fgray,alpha=0.75,s=100)
-		ax3d.scatter(drNodes[:,0],drNodes[:,1],drNodes[:,2],color='k',alpha=1,s=100)
 		for e in range(truss.nEl):
 			ePos = truss.els[e].rs.reshape(len(truss.eNodes[e]),3)
-			dePos = ePos+mDisp[truss.eNodes[e]]	
+			dePos = ePos+mDisp[truss.eNodes[e]]
 			ax3d.plot(ePos[:,0],ePos[:,1],ePos[:,2],'-',color=fgray,lw=4,alpha=0.75)
 			ax3d.plot(dePos[:,0],dePos[:,1],dePos[:,2],'-',color='k',lw=4)
+		ax3d.scatter(drNodes[:,0],drNodes[:,1],drNodes[:,2],color='k',alpha=1,s=100)
 		ax3d.set_xlim(-maxDim[0],maxDim[0])
 		ax3d.set_ylim(-maxDim[1],maxDim[1])
 		ax3d.set_zlim(0,maxDim[2])
@@ -224,7 +224,7 @@ def plotStress(truss,sigLim=1e3,maxDim=zeros(3),cPane=(.1,.1,.1,1.0),cEdges=(.8,
 	fig.subplots_adjust(left=0.0,right=1.0,top=1.0,bottom=0.0)
 	fig.show()
 
-# Define node positions (meters)
+# Define node positions (m)
 rNodes = array([[-95.25,0.,508],[95.25,0.,508],[-95.25,95.25,254],[95.25,95.25,254],[95.25,-95.25,254],\
     [-95.25,-95.25,254],[-254.,254,0],[254.,254,0],[254.,-254,0],[-254.,-254,0]])/1e2
 nNodes = len(rNodes)
