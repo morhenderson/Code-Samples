@@ -1,6 +1,7 @@
-# "Buffmo" the Autonomous Bison
-# Kalman Filter & Truth Model Testing Example
-# Originally Created For: ASEN 5044 (CU Boulder, Fall 2021)
+### Buffmo.py
+### Morgan Henderson, Fall 2021
+### "Buffmo" the Autonomous Bison: Kalman Filter & Truth Model Testing
+### Originally created for ASEN 5044 (CU Boulder, Fall 2021)
 
 from numpy import array, zeros, sin, cos, block, eye
 from numpy.random import multivariate_normal as mvn, uniform as uni
