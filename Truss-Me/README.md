@@ -8,11 +8,11 @@ I wrote the Truss-Me program (in part) to demonstrate my undertanding of the bas
 
 Other reasons for writing the program included a feeling that the whole process lends itself well to object-oriented programming, I was curious to see how the visualizations would look using interactive graphical software, and I thought that it might be a lot of fun. Incidentally: it was a lot of fun, the class-based layout of the program feels very natural to me, and the interactive 3D plotting is quite nice.
 
-The program is accompanied by three figures exhibiting the initial truss structure with labeled nodes, a depiction of the displaced structure after forces have been applied (with displacements magnified 100x), and a colormap image of the structure demonstrating the internal strains of each bar element.
+The program is accompanied by three figures: an initial truss structure with labeled nodes, the displaced structure after forces have been applied (with displacements magnified 100x), and a colormap image of the structure coded by internal strains of each bar element.
 
-### Use Guide
+### User Guide
 
-You can run Truss-Me.py as you would any other Python program to generate plots (I prefer to do so using iPython!). If you plan to run it from a command line and want to generate plots, I'd recommend replacing the lines "plt.show()" with "plt.save("file_name",dpi=desired_dpi)" to store them automatically. Interactive plotting windows allow you to view the visualizations from many different angles and are highly recommended!
+You can run Truss-Me.py as you would any other Python program to generate plots (I prefer to do so using IPython). If you plan to run it from a command line and want to generate plots, I'd recommend replacing the lines "plt.show()" with "plt.save("file_name",dpi=desired_dpi)" to store them automatically. Interactive plotting windows allow you to view the visualizations from many different angles and are highly recommended!
 
 This program is designed to handle a variety of changes. The arrays in sections below the comment that reads 'Define node positions (m)' (line 227) can be altered to produce different truss structures, change constituent material & fabrication properties, and control applied forcing & degree-of-freedom conditions.
 

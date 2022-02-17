@@ -2,7 +2,7 @@
 
 ## Overview
 
-The contents of this repo are a sampling of (very basic) programs and scripts demonstrating useful skills I've picked up. They include algorithms and methods I've learned in both educational and professional (including research) settings, but applied to conceptually simple problems to highlight fundamental concepts. More specific details about each program, including how to run them and descriptions of their outputs, are given in the README files in each of their folders.
+This repo contains a sampling of programs that demonstrate some useful skills I've picked up. They include algorithms and methods I've learned in both educational and professional (including research) settings, but applied to conceptually simple problems to highlight fundamental concepts. More specific details about each program, including how to run them and descriptions of their outputs, are given in the README files in each of their folders.
 
 ## Programs
 
@@ -16,4 +16,4 @@ The Truss-Me program (Truss-Me.py) is a simple finite elements program for desig
 
 ### Myc-Drop (C++)
 
-The Myc-Drop program (Myc-Drop) is a customizable fully-connected deep neural network for reading a mycological dataset and classifying each of the constituent samples as edible or poisonous.
+The Myc-Drop program (Myc-Drop) reads a mycological dataset and trains a customizable fully-connected deep neural network to classify each of the constituent samples as edible or poisonous based on a variety of sample attributes.

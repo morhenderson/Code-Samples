@@ -10,6 +10,6 @@ The program is accompanied by several figures and an extensive write-up (Buffmo.
 
 ### Use Guide
 
-You can run Buffmo.py as you would any other Python program to generate plots (I prefer to do so using iPython!). If you plan to run it from a command line and want to generate plots, I'd recommend replacing the lines "plt.show()" with "plt.save("file_name",dpi=desired_dpi)" to store them automatically.
+You can run Buffmo.py as you would any other Python program to generate plots (I prefer to do so using IPython). If you plan to run it from a command line and want to generate plots, I'd recommend replacing the lines "plt.show()" with "plt.save("file_name",dpi=desired_dpi)" to store them automatically.
 
 Other than the few noise & dynamical parameters listed benath the comment that reads 'Define parameters' (lines 15-21), there isn't too much to play around with in this program. Additional tunable variables include the number of truth model runs performed "nTMT" and the certainty level "alpha".
