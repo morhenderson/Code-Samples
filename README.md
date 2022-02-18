@@ -2,13 +2,13 @@
 
 ## Overview
 
-This repo contains a sampling of programs that demonstrate some useful skills I've picked up. They include algorithms and methods I've learned in both educational and professional (including research) settings, but applied to conceptually simple problems to highlight fundamental concepts. More specific details about each program, including how to run them and descriptions of their outputs, are given in the README files in each of their folders.
+This repo contains a sampling of programs that demonstrate some useful skills I've learned in both educational and professional (including research) settings, but applied to conceptually simple problems to highlight fundamental concepts. More specific details about each program, including how to run them and descriptions of their outputs, are given in the README files in each of their folders.
 
 ## Programs
 
 ### Buffmo (Python)
 
-The Buffmo program (Buffmo.py) is a basic but comprehensive tutorial for programmatically generating noisy dynamical and measurement data and implementing a standard Kalman filter to perform estimation on the artifically unknown states.
+The Buffmo program (Buffmo.py) is a basic but comprehensive tutorial for generating noisy dynamical and measurement data and implementing a standard Kalman filter to perform estimation on the artifically unknown states.
 
 ### Truss-Me (Python)
 

@@ -3,4 +3,4 @@
 ### Compiles the Myc-Drop program
 
 Myc-Drop:
-	@clang++ -std=c++17 Myc-Drop.cpp -o MycDrop
+	@clang++ -std=c++17 main.cpp -o ../MycDrop

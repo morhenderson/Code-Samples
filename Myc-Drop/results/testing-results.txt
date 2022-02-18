@@ -1,0 +1,496 @@
+TEST 1
+Inputs: 3 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 1 1 5 2 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 2
+Inputs: 2 3 0 0 6 0 0 0 1 0 6 3 3 4 4 0 0 1 5 2 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 3
+Inputs: 2 3 0 0 6 0 0 0 1 0 6 3 3 4 4 0 0 1 5 8 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 4
+Inputs: 4 2 0 0 3 2 0 1 2 1 6 2 3 7 5 0 2 1 1 7 4 3 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 5
+Inputs: 0 0 3 0 6 2 1 0 4 0 6 2 3 7 7 0 2 2 5 7 2 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 6
+Inputs: 4 3 0 0 3 2 0 1 2 1 6 3 2 5 7 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 7
+Inputs: 4 3 0 0 3 2 0 1 2 1 6 3 2 7 5 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 8
+Inputs: 4 2 0 0 4 2 0 1 2 1 6 2 3 7 7 0 2 1 1 7 4 1 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 9
+Inputs: 4 3 0 0 8 2 0 1 2 1 6 3 2 7 5 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 10
+Inputs: 3 0 0 0 6 2 1 0 10 0 6 3 2 7 7 0 2 2 5 7 3 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 11
+Inputs: 2 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 0 1 5 5 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 12
+Inputs: 4 2 0 0 4 2 0 1 2 1 6 2 2 7 5 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 13
+Inputs: 3 3 0 0 6 0 0 0 1 0 6 3 3 4 4 0 0 1 5 1 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 14
+Inputs: 0 0 3 0 6 2 1 0 10 0 6 2 3 7 7 0 2 2 5 7 2 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 15
+Inputs: 0 3 0 0 6 0 0 0 6 0 6 3 3 4 4 0 1 1 5 8 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 16
+Inputs: 3 3 0 0 6 0 0 0 6 0 6 3 3 4 4 0 0 1 5 5 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 17
+Inputs: 4 3 0 0 8 2 0 1 2 1 6 3 2 7 5 0 2 1 1 7 4 1 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 18
+Inputs: 4 3 0 0 4 2 0 1 2 1 6 3 3 7 5 0 2 1 1 7 4 3 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 19
+Inputs: 4 3 0 0 8 2 0 1 2 1 6 2 3 5 5 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 20
+Inputs: 4 3 0 0 8 2 0 1 2 1 6 2 2 5 5 0 2 1 1 7 4 3 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 21
+Inputs: 4 2 0 0 3 2 0 1 2 1 6 3 2 5 7 0 2 1 1 7 4 1 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 22
+Inputs: 4 0 0 0 6 2 1 0 10 0 6 2 3 7 7 0 2 2 5 7 3 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 23
+Inputs: 4 2 0 0 4 2 0 1 2 1 6 3 3 5 5 0 2 1 1 7 4 1 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 24
+Inputs: 4 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 1 1 5 2 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 25
+Inputs: 4 3 0 0 4 2 0 1 2 1 6 2 2 7 7 0 2 1 1 7 4 3 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 26
+Inputs: 0 3 0 0 6 0 0 0 1 0 6 3 3 4 4 0 1 1 5 2 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 27
+Inputs: 2 3 0 0 6 0 0 0 6 0 6 3 3 4 4 0 1 1 5 2 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 28
+Inputs: 4 3 0 0 6 0 0 0 1 0 6 3 3 4 4 0 0 1 5 1 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 29
+Inputs: 4 2 0 0 8 2 0 1 2 1 6 2 2 7 7 0 2 1 1 7 4 1 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 30
+Inputs: 4 3 0 0 6 0 0 0 1 0 6 3 3 4 4 0 1 1 5 8 4 1 
+Target: 0
+Output: 0.958117
+Recommendation: drop that myc(ological sample)!
+
+TEST 31
+Inputs: 4 2 0 0 4 2 0 1 2 1 6 2 2 7 7 0 2 1 1 7 4 3 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 32
+Inputs: 4 3 0 0 6 0 0 0 1 0 6 3 3 4 4 0 0 1 5 8 4 1 
+Target: 0
+Output: 0.956515
+Recommendation: drop that myc(ological sample)!
+
+TEST 33
+Inputs: 0 0 3 0 6 2 1 0 10 0 6 2 2 7 7 0 2 2 5 7 2 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 34
+Inputs: 2 3 0 0 6 0 0 0 6 0 6 3 3 4 4 0 1 1 5 5 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 35
+Inputs: 0 3 0 0 6 0 0 0 6 0 6 3 3 4 4 0 0 1 5 8 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 36
+Inputs: 2 3 0 0 6 0 0 0 6 0 6 3 3 4 4 0 0 1 5 5 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 37
+Inputs: 0 0 3 0 6 2 1 0 4 0 6 3 3 7 7 0 2 2 5 7 3 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 38
+Inputs: 4 2 0 0 4 2 0 1 2 1 6 3 3 7 7 0 2 1 1 7 4 1 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 39
+Inputs: 4 3 0 0 8 2 0 1 2 1 6 3 2 5 7 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 40
+Inputs: 4 2 0 0 4 2 0 1 2 1 6 2 3 7 7 0 2 1 1 7 4 3 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 41
+Inputs: 4 3 0 0 8 2 0 1 2 1 6 2 2 5 5 0 2 1 1 7 4 3 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 42
+Inputs: 4 2 0 0 3 2 0 1 2 1 6 3 3 7 7 0 2 1 1 7 4 1 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 43
+Inputs: 0 0 3 0 6 2 1 0 7 0 6 2 2 7 7 0 2 2 5 7 3 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 44
+Inputs: 4 0 0 0 6 2 1 0 4 0 6 3 2 7 7 0 2 2 5 7 3 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 45
+Inputs: 4 3 0 0 6 0 0 0 1 0 6 3 3 4 4 0 0 1 5 5 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 46
+Inputs: 3 3 0 0 4 2 0 1 2 1 6 2 3 7 5 0 2 1 1 7 4 3 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 47
+Inputs: 4 3 0 0 6 0 0 0 1 0 6 3 3 4 4 0 1 1 5 1 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 48
+Inputs: 4 2 0 0 4 2 0 1 2 1 6 2 2 7 5 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 49
+Inputs: 4 3 0 0 4 2 0 1 2 1 6 2 3 5 5 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 50
+Inputs: 4 2 0 0 4 2 0 1 2 1 6 3 2 7 7 0 2 1 1 7 4 3 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 51
+Inputs: 4 2 0 0 3 2 0 1 2 1 6 3 3 5 5 0 2 1 1 7 4 3 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 52
+Inputs: 3 3 0 0 3 2 0 1 2 1 6 2 2 7 7 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 53
+Inputs: 0 3 3 0 6 2 1 0 4 0 6 2 3 7 7 0 2 2 5 7 2 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 54
+Inputs: 3 2 2 0 5 2 0 0 11 0 1 2 1 2 2 0 2 0 4 7 1 6 
+Target: 1
+Output: 0.065484
+Recommendation: keep that myc(ological sample)!
+
+TEST 55
+Inputs: 4 0 0 0 6 2 1 0 10 0 6 2 3 7 7 0 2 2 5 7 2 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 56
+Inputs: 4 2 0 0 8 2 0 1 2 1 6 2 2 5 5 0 2 1 1 7 4 1 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 57
+Inputs: 4 3 0 0 3 2 0 1 2 1 6 2 2 7 5 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 58
+Inputs: 4 0 0 0 6 2 1 0 10 0 6 2 2 7 7 0 2 2 5 7 3 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 59
+Inputs: 2 3 0 0 6 0 0 0 6 0 6 3 3 4 4 0 0 1 5 2 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 60
+Inputs: 4 3 0 0 8 2 0 1 2 1 6 3 3 5 7 0 2 1 1 7 4 3 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 61
+Inputs: 3 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 0 1 5 1 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 62
+Inputs: 4 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 0 1 5 5 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 63
+Inputs: 4 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 1 1 5 1 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 64
+Inputs: 4 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 0 1 5 8 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 65
+Inputs: 4 3 0 0 6 0 0 0 6 0 6 3 3 4 4 0 1 1 5 1 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 66
+Inputs: 3 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 1 1 5 1 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 67
+Inputs: 4 2 0 0 3 2 0 1 2 1 6 2 3 5 7 0 2 1 1 7 4 1 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 68
+Inputs: 0 3 0 0 6 2 1 0 10 0 6 3 3 7 7 0 2 2 5 7 2 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 69
+Inputs: 3 3 0 0 6 0 0 0 6 0 6 3 3 4 4 0 1 1 5 1 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 70
+Inputs: 4 3 0 0 6 2 1 0 7 0 6 3 3 7 7 0 2 2 5 7 2 0 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 71
+Inputs: 4 3 0 0 6 0 0 0 6 0 6 3 3 4 4 0 0 1 5 2 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 72
+Inputs: 4 2 0 0 3 2 0 1 2 1 6 2 2 5 5 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 73
+Inputs: 2 2 2 0 5 0 0 0 11 0 1 2 1 2 2 0 2 0 4 7 1 6 
+Target: 1
+Output: 0.000129599
+Recommendation: keep that myc(ological sample)!
+
+TEST 74
+Inputs: 3 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 1 1 5 5 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 75
+Inputs: 4 2 0 0 8 2 0 1 2 1 6 3 2 5 7 0 2 1 1 7 4 1 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 76
+Inputs: 4 3 0 0 3 2 0 1 2 1 6 2 3 5 7 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 77
+Inputs: 4 2 0 0 4 2 0 1 2 1 6 2 3 5 7 0 2 1 1 7 4 6 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 78
+Inputs: 4 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 1 1 5 2 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 79
+Inputs: 3 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 0 1 5 2 4 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 80
+Inputs: 2 3 0 0 6 0 0 0 1 0 6 3 3 4 4 0 1 1 5 2 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST 81
+Inputs: 4 2 0 0 3 2 0 1 2 1 6 3 2 7 7 0 2 1 1 7 4 1 
+Target: 1
+Output: 0.958118
+Recommendation: drop that myc(ological sample)!
+
+TEST 82
+Inputs: 3 3 0 0 6 0 0 0 11 0 6 3 3 4 4 0 1 1 5 5 1 1 
+Target: 0
+Output: 0.000129589
+Recommendation: keep that myc(ological sample)!
+
+TEST SUMMARY
+Correct: 		78 	(95%)
+False (+): 		2 	(2%)
+False (-): 		2 	(2%)
