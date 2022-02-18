@@ -8,12 +8,16 @@ This repo contains a sampling of programs that demonstrate some useful skills I'
 
 ### Buffmo (Python)
 
-The Buffmo program (Buffmo.py) is a basic but comprehensive tutorial for generating noisy dynamical and measurement data and implementing a standard Kalman filter to perform estimation on the artifically unknown states.
-
-### Truss-Me (Python)
-
-The Truss-Me program (Truss-Me.py) is a simple finite elements program for designing and testing truss structres composed of 2-node bar elements under applied forcing conditions and degree-of-freedom constraints.
+The Buffmo program is a basic but comprehensive tutorial for generating noisy dynamical and measurement data and implementing a standard Kalman filter to perform estimation on the artifically unknown states.
 
 ### Myc-Drop (C++)
 
-The Myc-Drop program (Myc-Drop) reads a mycological dataset and trains a customizable fully-connected deep neural network to classify each of the constituent samples as edible or poisonous based on a variety of sample attributes.
+The Myc-Drop program trains a customizable, fully-connected deep neural network to classify each of the constituent samples in a mycological dataset as edible or poisonous based on a variety of attributes.
+
+### Nevermore (C++)
+
+The Nevermore program carries out a genetic algorithm that attempts to match an input phrase by propagating a random initial string with random mutations.
+
+### Truss-Me (Python)
+
+The Truss-Me program is a simple finite elements program for designing and testing truss structres composed of 2-node bar elements under applied forcing conditions and degree-of-freedom constraints.

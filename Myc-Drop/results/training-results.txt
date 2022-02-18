@@ -48249,4 +48249,3 @@ Inputs: 4 2 0 0 3 2 0 1 2 1 6 2 3 5 7 0 2 1 1 7 4 3
 Target: 1
 Output: 0.957707
 Recent Average Error: 0.0247489
-

@@ -81,7 +81,8 @@ int main(int argc, char* argv[]) {
         for (unsigned i=0; i<inIDs.size(); i++) {trainFile << inputs[i] << " ";}
         trainFile << "\nTarget: " << outputs.back() << "\n";
         trainFile << "Output: " << results.back() << "\n";
-        trainFile << "Recent Average Error: " << MycNet.get_RAE() << "\n\n";
+        trainFile << "Recent Average Error: " << MycNet.get_RAE();
+        if (p<nTrain-1) {trainFile <<"\n\n";}
     }
     trainFile.close();
 
@@ -129,7 +130,7 @@ int main(int argc, char* argv[]) {
     testFile << "TEST SUMMARY\n";
     testFile << "Correct: \t\t" << corr << " \t(" << 100*corr/nTest << "%)\n";
     testFile << "False (+): \t\t" << fpos << " \t(" << 100*fpos/nTest << "%)\n";
-    testFile << "False (-): \t\t" << fneg << " \t(" << 100*fneg/nTest << "%)\n";
+    testFile << "False (-): \t\t" << fneg << " \t(" << 100*fneg/nTest << "%)";
     testFile.close();
     return 0;
 }
