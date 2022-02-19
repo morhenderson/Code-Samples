@@ -25,9 +25,12 @@ unsigned readConfig(const string &fpath) {
     while (getline(configFile,conLine)) {
         strip(conLine);
         split(conLine,lItems,':');
-        const string setting = lItems[0];
-        const string option = lItems[1];
-        if (setting==settings[0]) {phrase = option;}
+        string setting = lItems[0];
+        string option = lItems[1];
+        if (setting==settings[0]) {
+            replace(option,'-',' ');
+            phrase = option;
+        }
         else if (setting==settings[1]) {popSize = stod(option);}
         else if (setting==settings[2]) {mutRate = stod(option);}
         else if (setting==settings[3]) {survRate = stod(option);}

@@ -12,6 +12,7 @@
 #include <algorithm>
 #include <stdio.h>
 #include <iostream>
+#include <iomanip>
 #include <fstream>
 using namespace std;
 
@@ -52,14 +53,15 @@ int main(int argc, char* argv[]) {
     unsigned gen = 1;
     const unsigned nSurv = survRate*popSize;
     ofstream outFile(root+"output.txt");
+    outFile << "TARGET PHRASE: " << phrase << "\n\n";
     while (maxFit<1) {
         fitnesses.clear();
 
         // Print the details of this generation to the output file
         outFile << "GENERATION " << gen << "\n";
         for (unsigned p=0; p<popSize; p++) {
-            outFile << "G" << gen << "-" << p << ": \t";
-            outFile << "Quoth the raven, \"" << pool[p].genes << "\"\t";
+            outFile << "G" << gen << "-" << p << ": \t\t";
+            outFile << "Quoth the raven, \"" << pool[p].genes << "\" \t\t";
             outFile << pool[p].fitness << "\n";
         }
         outFile << "MAXIMUM FITNESS: " << maxFit << "\n\n";
@@ -97,8 +99,8 @@ int main(int argc, char* argv[]) {
     // Print the details of the final generation to the output file
     outFile << "GENERATION " << gen << "\n";
     for (unsigned p=0; p<popSize; p++) {
-        outFile << "G" << gen << "-" << p << ": \t";
-        outFile << "Quoth the raven, \"" << pool[p].genes << "\"\t";
+        outFile << "G" << gen << "-" << p << ": \t\t";
+        outFile << "Quoth the raven, \"" << pool[p].genes << "\" \t\t";
         outFile << pool[p].fitness << "\n";
     }
     outFile << "MAXIMUM FITNESS: " << maxFit;

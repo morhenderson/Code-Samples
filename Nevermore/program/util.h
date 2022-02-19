@@ -35,6 +35,13 @@ string join(const vector<string> &inVec, const char &dlim) {
     return outStr;
 }
 
+// Replaces all instances of a character in a string
+void replace(string &inStr, const char &oldChar, const char &newChar) {
+    for (unsigned i=0; i<inStr.length(); i++) {
+        if (inStr[i]==oldChar) {inStr[i]=newChar;}
+    }
+}
+
 // An alphabet string, including a space
 string alph = {"ABCDEFGHIJKLMNOPQRSTUVWXYZ "};
 
