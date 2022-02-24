@@ -41,8 +41,8 @@ unsigned readConfig(const string &fpath) {
         else if (setting==settings[4]) {nDat = stod(option);}
         else if (setting==settings[5]) {datSplit = stod(option);}
         else if (setting==settings[6]) {
-            if (option=="all") {inIDs=range(0,22);}
-            else {
+            if (option!="all") {
+                inIDs.clear();
                 split(option,oItems,',');
                 for (unsigned i=0; i<oItems.size(); i++) {inIDs.push_back(stoi(oItems[i]));}
             }

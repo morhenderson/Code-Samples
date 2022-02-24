@@ -21,7 +21,10 @@ void split(const string &inStr, vector<string> &outVec, const char &dlim) {
     outVec.clear();
     outVec.push_back("");
     for (unsigned i=0; i<inStr.length(); i++) {
-        if (inStr[i]==dlim) {outVec.push_back("");}
+        if (inStr[i]==dlim) {
+            string newStr;
+            outVec.push_back(newStr);
+        }
         else {outVec.back()=outVec.back()+inStr[i];}
     }
 }

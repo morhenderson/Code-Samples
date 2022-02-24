@@ -1,0 +1,21 @@
+TOP RESULTS
+
+Overall Success Rate:
+
+	All_3-1        	(0.976 +/- 0.002)
+
+False Positive Rate:
+
+	6Key_3-3       	(0.000 +/- 0.000)
+
+False Negative Rate:
+
+	2Key_2         	(0.000 +/- 0.000)
+
+	2Key_2_aLo     	(0.000 +/- 0.000)
+
+	All_3-1        	(0.000 +/- 0.000)
+
+Combined Score:
+
+	All_3-1        	(0.998 +/- 0.000)

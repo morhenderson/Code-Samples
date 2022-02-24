@@ -1,0 +1,4 @@
+TEST SUMMARY
+Correct: 		171 	(83%)
+False (+): 		29 	(14%)
+False (-): 		4 	(1%)

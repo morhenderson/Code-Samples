@@ -33,11 +33,18 @@ int main(int argc, char* argv[]) {
     path_items.pop_back();
     const string root = join(path_items,'/');
     const string configPath = root+"config";
+    const string outSuffix = argc>1 ? argv[1] : "-results";
+    const unsigned trainFlag = argc>2 ? stoi(argv[2]) : 1;
+    const unsigned testFlag = argc>3 ? stoi(argv[3]) : 1;
+    const unsigned summaryFlag = argc>4 ? stoi(argv[4]) : 0;
 
-    // Read the configuration file
+    // Read the configuration file & declare output file variables
     if (readConfig(configPath)) {
         cout << "WARNING: Could not read config, using default parameters.";
     }
+    ofstream trainFile;
+    ofstream testFile;
+    ofstream summaryFile;
 
     // Initialize the network
     network MycNet;
@@ -52,7 +59,7 @@ int main(int argc, char* argv[]) {
     vector<string> lItems;    
 
     // Reading through data, train the network
-    ofstream trainFile(root+"results/training-results.txt");
+    if (trainFlag) {trainFile.open(root+"results/training"+outSuffix+".txt");}
     for (unsigned p=0; p<nTrain; p++) {
 
         // Declare holding vectors for inputs, outputs, & results
@@ -62,7 +69,7 @@ int main(int argc, char* argv[]) {
 
         // Read & split up a line of data
         getline(datFile,datLine);
-        split(datLine,lItems,',');
+        split(datLine,lItems,',');        
 
         // Map line items to integer values & place in input/output vectors
         outputs.push_back(datMaps[0][lItems[0]]);
@@ -76,13 +83,15 @@ int main(int argc, char* argv[]) {
         MycNet.report(results);
 
         // Report the outcome of this training epoch
-        trainFile << "EPOCH " << p+1 << "\n";
-        trainFile << "Inputs: ";
-        for (unsigned i=0; i<inIDs.size(); i++) {trainFile << inputs[i] << " ";}
-        trainFile << "\nTarget: " << outputs.back() << "\n";
-        trainFile << "Output: " << results.back() << "\n";
-        trainFile << "Recent Average Error: " << MycNet.get_RAE();
-        if (p<nTrain-1) {trainFile <<"\n\n";}
+        if (trainFlag) {
+            trainFile << "EPOCH " << p+1 << "\n";
+            trainFile << "Inputs: ";
+            for (unsigned i=0; i<inIDs.size(); i++) {trainFile << inputs[i] << " ";}
+            trainFile << "\nTarget: " << outputs.back() << "\n";
+            trainFile << "Output: " << results.back() << "\n";
+            trainFile << "Recent Average Error: " << MycNet.get_RAE();
+            if (p<nTrain-1) {trainFile <<"\n\n";}
+        }
     }
     trainFile.close();
 
@@ -90,7 +99,7 @@ int main(int argc, char* argv[]) {
     unsigned corr = 0;
     unsigned fpos = 0;
     unsigned fneg = 0;
-    ofstream testFile(root+"results/testing-results.txt");
+    if (testFlag) {testFile.open(root+"results/testing"+outSuffix+".txt");}
     for (unsigned p=0; p<nTest; p++) {
 
         // Declare holding vectors for inputs, outputs, & results
@@ -118,19 +127,32 @@ int main(int argc, char* argv[]) {
         else if (rec=="keep"&&truth==1) {fneg++;}
 
         // Report the outcome of this training epoch
-        testFile << "TEST " << p+1 << "\n";
-        testFile << "Inputs: ";
-        for (unsigned i=0; i<inIDs.size(); i++) {testFile << inputs[i] << " ";}
-        testFile << "\nTarget: " << truth << "\n";
-        testFile << "Output: " << results.back() << "\n";
-        testFile << "Recommendation: " << rec << " that myc(ological sample)!" << "\n\n";
+        if (testFlag) {
+            testFile << "TEST " << p+1 << "\n";
+            testFile << "Inputs: ";
+            for (unsigned i=0; i<inIDs.size(); i++) {testFile << inputs[i] << " ";}
+            testFile << "\nTarget: " << truth << "\n";
+            testFile << "Output: " << results.back() << "\n";
+            testFile << "Recommendation: " << rec << " that myc(ological sample)!" << "\n\n";
+        }
     }
 
     // Provide a summary of testing outcomes
-    testFile << "TEST SUMMARY\n";
-    testFile << "Correct: \t\t" << corr << " \t(" << 100*corr/nTest << "%)\n";
-    testFile << "False (+): \t\t" << fpos << " \t(" << 100*fpos/nTest << "%)\n";
-    testFile << "False (-): \t\t" << fneg << " \t(" << 100*fneg/nTest << "%)";
-    testFile.close();
+    string summaryText;
+    if (testFlag||summaryFlag) {
+        summaryText = "TEST SUMMARY\n"
+            "Correct: \t\t" + to_string(corr) + " \t(" + to_string(100*corr/nTest) + "%)\n"
+            "False (+): \t\t" + to_string(fpos) + " \t(" + to_string(100*fpos/nTest) + "%)\n"
+            "False (-): \t\t" + to_string(fneg) + " \t(" + to_string(100*fneg/nTest) + "%)";
+    }
+    if (testFlag) {
+        testFile << summaryText;
+        testFile.close();
+    }
+    if (summaryFlag) {
+        summaryFile.open(root+"results/summary"+outSuffix+".txt");
+        summaryFile << summaryText;
+        testFile.close();
+    }
     return 0;
 }
