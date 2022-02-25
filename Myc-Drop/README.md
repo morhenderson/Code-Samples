@@ -5,7 +5,6 @@
 The Myc-Drop program trains a customizable, fully connected feed-forward network to classify each of the constituent samples in a mycological dataset as edible or poisonous based on a selection of input attributes.
 
 
-
 ... The data used for this program are stored in 'agaricus-lepiota.data'
 
 ### Use Guide
